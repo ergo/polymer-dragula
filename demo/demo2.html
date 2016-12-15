@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>polymer-dragula demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="demo-elem.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+
+      .vertical-section-container {
+        max-width: 600px;
+      }
+
+      .row {
+        border: 1px dotted #999999;
+        margin: 15px;
+        width: 100%;
+        padding: 15px;
+      }
+
+      .column {
+        border: 1px dotted #0d47a1;
+        margin: 5px;
+        display: block;
+        padding: 15px;
+        background-color: #ffcc80;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .gu-mirror {
+        position: fixed !important;
+        margin: 0 !important;
+        z-index: 9999 !important;
+        opacity: 0.8;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+      }
+
+      .gu-hide {
+        display: none !important;
+      }
+
+      .gu-unselectable {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+      }
+
+      .gu-transit {
+        opacity: 0.2;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+        filter: alpha(opacity=20);
+      }
+
+      .handle-inner, .handle {
+        border: 3px solid;
+        border-radius: 15px;
+        padding: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Complex polymer-dragula demo with element nesting</h3>
+      <demo-snippet>
+        <template>
+          <demo-elem></demo-elem>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
