@@ -11,7 +11,9 @@
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../polymer-dragula.html">
+    <link rel="import" href="../polymer-dragula-styles.html">
 
+    <style is="custom-style" include="polymer-dragula-styles"></style>
     <style is="custom-style" include="demo-pages-shared-styles">
 
         .vertical-section-container {
@@ -29,36 +31,6 @@
             cursor: -moz-grab;
             cursor: -webkit-grab;
         }
-
-        .gu-mirror {
-            position: fixed !important;
-            margin: 0 !important;
-            z-index: 9999 !important;
-            opacity: 0.8;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-            filter: alpha(opacity=80);
-            cursor: grabbing;
-            cursor: -moz-grabbing;
-            cursor: -webkit-grabbing;
-        }
-
-        .gu-hide {
-            display: none !important;
-        }
-
-        .gu-unselectable {
-            -webkit-user-select: none !important;
-            -moz-user-select: none !important;
-            -ms-user-select: none !important;
-            user-select: none !important;
-        }
-
-        .gu-transit {
-            opacity: 0.2;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-            filter: alpha(opacity=20);
-        }
-
     </style>
 </head>
 <body>
