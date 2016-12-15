@@ -3,12 +3,14 @@
 Polymer implementation of dragula D&amp;D handling
 
 
-<!-- START-HIDDEN-SECTION: Add imports and styling here. -->
-<script src="../webcomponentsjs/webcomponents-lite.js"></script>
-<link rel="import" href="polymer-dragula.html">
-<!-- END-HIDDEN-SECTION: Add the visible part of the demo below. -->
-<template>
-    <style>
+Example:
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="polymer-dragula.html">
+  <style>
 
         .vertical-section-container {
             max-width: 600px;
@@ -56,7 +58,12 @@ Polymer implementation of dragula D&amp;D handling
         }
 
     </style>
-
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
     <polymer-dragula>
         <div class="row-holder">
             <div class="column">
@@ -76,6 +83,8 @@ Polymer implementation of dragula D&amp;D handling
             </div>
         </div>
     </polymer-dragula>
+```
+
 </template>
 
 ## Install the Polymer-CLI
