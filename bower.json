@@ -1,6 +1,6 @@
 {
   "name": "polymer-dragula",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Polymer implementation of dragula drag and drop handling",
   "main": "polymer-dragula.html",
   "license": "Apache-2.0",
