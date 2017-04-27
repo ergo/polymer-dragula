@@ -11,24 +11,11 @@
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../polymer-dragula.html">
+    <link rel="import" href="../polymer-dragula-styles.html">
 
-    <style is="custom-style" include="polymer-dragula-styles"></style>
     <style is="custom-style" include="demo-pages-shared-styles">
-
         .vertical-section-container {
             max-width: 600px;
-        }
-
-        .column {
-            border: 1px dotted #0d47a1;
-            margin: 5px;
-            display: block;
-            padding: 15px;
-            background-color: #ffcc80;
-            cursor: move;
-            cursor: grab;
-            cursor: -moz-grab;
-            cursor: -webkit-grab;
         }
     </style>
 </head>
@@ -37,22 +24,36 @@
     <h3>Basic polymer-dragula demo</h3>
     <demo-snippet>
         <template>
+            <style is="custom-style" include="polymer-dragula-styles">
+                .column {
+                    border: 1px dotted #0d47a1;
+                    margin: 5px;
+                    display: block;
+                    padding: 15px;
+                    background-color: #ffcc80;
+                    cursor: move;
+                    cursor: grab;
+                    cursor: -moz-grab;
+                    cursor: -webkit-grab;
+                }
+            </style>
+
             <polymer-dragula>
-                <div class="row-holder">
+                <div>
                     <div class="column">
-                        <p>item-1</p>
+                        <p>Item 1</p>
                     </div>
                     <div class="column">
-                        <p>item-2</p>
+                        <p>Item 2</p>
                     </div>
                     <div class="column">
-                        <p>item-3</p>
+                        <p>Item 3</p>
                     </div>
                     <div class="column">
-                        <p>item-4</p>
+                        <p>Item 4</p>
                     </div>
                     <div class="column">
-                        <p>item-5</p>
+                        <p>Item 5</p>
                     </div>
                 </div>
             </polymer-dragula>
