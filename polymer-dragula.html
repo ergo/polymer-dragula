@@ -204,8 +204,8 @@ Polymer wrapper of dragula drag and drop library
               drake.on('dragend', function (el) {
                   this.fire('dragula-dragend', {el: el});
               }.bind(this));
-              drake.on('drop', function (el, target, source) {
-                  this.fire('dragula-drop', {el: el, target: target, source: source});
+              drake.on('drop', function (el, target, source, sibling) {
+                  this.fire('dragula-drop', {el: el, target: target, source: source, sibling: sibling});
               }.bind(this));
               drake.on('cancel', function (el, container, source) {
                   this.fire('dragula-cancel', {el: el, container: container, source: source});
