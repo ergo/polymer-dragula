@@ -2,6 +2,11 @@
 
 Polymer implementation of dragula D&amp;D handling
 
+**IMPORTANT**
+
+In its current implementation, this will only work when the`<polymer-dragula>` element is itself in the main document, and *won't* work when it is inside another element/shadow dom.
+See [this](https://github.com/bevacqua/dragula/issues/418) issue for more info.
+
 
 Example:
 <!---
