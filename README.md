@@ -2,6 +2,8 @@
 
 Polymer implementation of dragula D&amp;D handling
 
+**Information**: Before bevacqua/dragula#470 gets merged into dragula this element might not work correctly inside Shadow DOM.
+
 
 Example:
 <!---
