@@ -9,8 +9,7 @@
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
 
-    <link rel="import" href="../polymer-dragula.html">
-  </head>
+  <script src="../../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>/head>
   <body>
     <test-fixture id="basic">
       <template>
@@ -22,9 +21,12 @@
       suite('polymer-dragula', function() {
         test('instantiating the element works', function() {
           var element = fixture('basic');
-          assert.equal(element.is, 'polymer-dragula');
-        });
-      });
-    </script>
-  </body>
-</html>
+    <script type="module">
+import '../polymer-dragula.js';
+suite('polymer-dragula', function() {
+  test('instantiating the element works', function() {
+    var element = fixture('basic');
+    assert.equal(element.is, 'polymer-dragula');
+  });
+});
+</script>
