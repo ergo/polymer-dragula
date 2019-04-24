@@ -1,4 +1,6 @@
-<!--
+import 'dragula/dist/dragula.js';
+
+/*
 Copyright 2016 Marcin Lulek
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,5 +15,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
--->
-<script src="../dragula.js/dist/dragula.js"></script>
+*/
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
